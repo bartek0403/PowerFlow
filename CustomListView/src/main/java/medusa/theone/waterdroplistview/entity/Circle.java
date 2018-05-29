@@ -2,13 +2,12 @@ package medusa.theone.waterdroplistview.entity;
 
 /**
  * Created by xiayong on 2015/6/25.
- * 实心圆
  */
 public class Circle {
-    private float x;//圆x坐标
-    private float y;//圆y坐标
-    private float radius;//圆半径
-    private int color;//圆的颜色
+    private float x;
+    private float y;
+    private float radius;
+    private int color;
 
     public float getX() {
         return x;

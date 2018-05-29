@@ -2,7 +2,7 @@ package medusa.theone.waterdroplistview.activity;
 
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +17,7 @@ import medusa.theone.waterdroplistview.R;
 import medusa.theone.waterdroplistview.view.WaterDropListView;
 
 
-public class MainActivity extends ActionBarActivity implements WaterDropListView.IWaterDropListViewListener  {
+public class MainActivity extends AppCompatActivity implements WaterDropListView.IWaterDropListViewListener  {
 
     private WaterDropListView waterDropListView;
     private Handler handler = new Handler() {

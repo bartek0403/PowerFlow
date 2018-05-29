@@ -4,9 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import medusa.theone.waterdroplistview.view.WaterDropListView;
 
 public class MainActivity extends Activity implements WaterDropListView.IWaterDropListViewListener{
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity implements WaterDropListView.IWaterDr
     float busPQ1_pl, busPQ1_ql;
     float busPQ2_pl, busPQ2_ql;
     float busSlack_v,busSlack_angle;
+    private WaterDropListView listView;
 
     CustomAdapter adapter;
     private ArrayList<BusObject> busArray;
@@ -230,9 +232,11 @@ public class MainActivity extends Activity implements WaterDropListView.IWaterDr
             }
         });
 
-        ListView listView = (ListView) findViewById(R.id.listView_layout);
+        listView = (WaterDropListView) findViewById(R.id.listView_layout);
         adapter = new CustomAdapter(this,busArray);
         listView.setAdapter(adapter);
+        listView.setWaterDropListViewListener(this);
+        listView.setPullLoadEnable(true);
 
     }
 
@@ -266,6 +270,21 @@ public class MainActivity extends Activity implements WaterDropListView.IWaterDr
         busArray.add(new BusObject(output[2],output[6],output[10],output[14]));
         busArray.add(new BusObject(output[3],output[7],output[11],output[15]));
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onRefresh() {
+        prepareInput();
+        output = nMain(input);
+        prepareOutput();
+        listView.stopRefresh();
+    }
+
+    @Override
+    public void onLoadMore() {
+        listView.stopLoadMore();
+        output = nMain(defaultInput);
+        prepareOutput();
     }
 }
 
