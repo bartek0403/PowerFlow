@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import medusa.theone.waterdroplistview.view.WaterDropListView;
 
 public class MainActivity extends Activity implements WaterDropListView.IWaterDropListViewListener{
-
+    //TODO wyczyścić CustomListView by nie isntalowala sie SecondActiity
     public String TAG = "MainActivity";
     public float[] output = new float[16];
     public float defaultInput[] = {9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28};
