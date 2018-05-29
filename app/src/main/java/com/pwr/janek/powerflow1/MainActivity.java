@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements WaterDropListView.IWaterDropListViewListener{
 
     public String TAG = "MainActivity";
     public float[] output = new float[16];
@@ -33,7 +33,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         busArray = new ArrayList<BusObject>();

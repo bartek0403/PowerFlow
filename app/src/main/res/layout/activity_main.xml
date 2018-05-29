@@ -168,11 +168,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ListView
+        <medusa.theone.waterdroplistview.view.WaterDropListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/listView_layout">
-        </ListView>
+        </medusa.theone.waterdroplistview.view.WaterDropListView>
 
     </LinearLayout>
 
