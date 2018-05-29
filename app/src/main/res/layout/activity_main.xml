@@ -148,31 +148,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="@android:color/holo_green_light"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="4">
 
-        <Button
-            android:id="@+id/button_calculate_default"
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="64dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Calc Def" />
+            android:gravity="center_horizontal"
+            android:text="Bus No." />
 
-        <Button
-            android:id="@+id/button_calculate"
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="64dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Calculate" />
+            android:gravity="center_horizontal"
+            android:text="Bus Type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Bus Voltage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Phrase" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <medusa.theone.waterdroplistview.view.WaterDropListView
+            android:id="@+id/listView_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/listView_layout">
-        </medusa.theone.waterdroplistview.view.WaterDropListView>
+            android:layout_height="wrap_content"></medusa.theone.waterdroplistview.view.WaterDropListView>
 
     </LinearLayout>
 

@@ -213,25 +213,6 @@ public class MainActivity extends Activity implements WaterDropListView.IWaterDr
             }
         });
 
-        Button calculate = (Button) findViewById(R.id.button_calculate);
-        calculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                prepareInput();
-                output = nMain(input);
-                prepareOutput();
-            }
-        });
-
-        Button calculateDefault = (Button) findViewById(R.id.button_calculate_default);
-        calculateDefault.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                output = nMain(defaultInput);
-                prepareOutput();
-            }
-        });
-
         listView = (WaterDropListView) findViewById(R.id.listView_layout);
         adapter = new CustomAdapter(this,busArray);
         listView.setAdapter(adapter);
