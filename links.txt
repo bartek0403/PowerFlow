@@ -1,0 +1,9 @@
+https://www.developer.com/java/data/jni-data-type-mapping-to-cc.html
+
+https://www.utdallas.edu/ssprl/files/Users-Guide-Android.pdf
+
+https://www.math.uni-hamburg.de/doc/java/tutorial/native1.1/implementing/array.html
+
+https://guides.codepath.com/android/Creating-Custom-Listeners
+
+https://books.google.pl/books?id=WJ1iAgAAQBAJ&pg=PT65&lpg=PT65&dq=android+c+implementacja&source=bl&ots=fWnUFTUn0v&sig=HQY_Mia5ZYq7mrM82CB6W12cXo4&hl=pl&sa=X&ved=0ahUKEwjcyeHx0v7aAhUGVSwKHYTLATMQ6AEIazAH#v=onepage&q=android%20c%20implementacja&f=false
