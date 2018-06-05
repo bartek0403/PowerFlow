@@ -48,7 +48,6 @@ public class BusSlackDialog extends DialogFragment {
                 dialogInterface.dismiss();
             }
         });
-
         return builder.create();
     }
 }

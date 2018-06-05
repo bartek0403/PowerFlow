@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:hint="V" />
+            android:hint="Voltage[p.u]" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:hint="angle" />
+            android:hint="Phrase [deg]" />
     </android.support.design.widget.TextInputLayout>
 
 </LinearLayout>

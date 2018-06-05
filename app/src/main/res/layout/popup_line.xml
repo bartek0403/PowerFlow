@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="SS"
+            android:hint="Y/2"
             android:inputType="numberDecimal"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="145dp" />

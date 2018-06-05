@@ -50,7 +50,6 @@ public class BusPQDialog extends DialogFragment {
                 dialogInterface.dismiss();
             }
         });
-
         return builder.create();
     }
 }

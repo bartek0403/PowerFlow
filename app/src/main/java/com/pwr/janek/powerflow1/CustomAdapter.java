@@ -19,13 +19,11 @@ public class CustomAdapter extends ArrayAdapter<BusObject> {
     private final Context context;
     private ArrayList<BusObject> events;
 
-    public CustomAdapter(Activity context, ArrayList<BusObject> busObjects){
-        super(context,0, busObjects);
+    public CustomAdapter(Activity context, ArrayList<BusObject> busObjects) {
+        super(context, 0, busObjects);
         this.context = context;
         this.events = busObjects;
-
     }
-
 
     @NonNull
     @Override
@@ -35,15 +33,15 @@ public class CustomAdapter extends ArrayAdapter<BusObject> {
         dec.setMaximumFractionDigits(2);
         dec.setMinimumFractionDigits(2);
 
-       View listItemView = convertView;
-       if(listItemView ==null){
-           listItemView = LayoutInflater.from(getContext()).inflate(R.layout.single_row,parent,false);
-       }
+        View listItemView = convertView;
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.single_row, parent, false);
+        }
 
         BusObject currentBus = getItem(position);
 
         TextView busNumber = (TextView) listItemView.findViewById(R.id.textView_row_busumber);
-        busNumber.setText(String.valueOf((int)currentBus.getBusNumber()));
+        busNumber.setText(String.valueOf((int) currentBus.getBusNumber()));
 
         TextView busType = (TextView) listItemView.findViewById(R.id.textView_row_bustype);
         busType.setText(currentBus.getBusType());

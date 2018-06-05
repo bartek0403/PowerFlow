@@ -35,8 +35,8 @@ public class BusPVDialog extends DialogFragment {
             public void onClick(DialogInterface dialogInterface, int i) {
                 final TextInputLayout busPV_pg_wrapper = (TextInputLayout) getDialog().findViewById(R.id.bus_pv_pg_wrapper);
                 final TextInputLayout busPV_v_wrapper = (TextInputLayout) getDialog().findViewById(R.id.bus_pv_v_wrapper);
-                 EditText pg = (EditText) getDialog().findViewById(R.id.eddiText_bus_pv_pg);
-                 EditText v = (EditText) getDialog().findViewById(R.id.editText_bus_pv_v);
+                EditText pg = (EditText) getDialog().findViewById(R.id.eddiText_bus_pv_pg);
+                EditText v = (EditText) getDialog().findViewById(R.id.editText_bus_pv_v);
                 mListener.onDialogPositiveClick(
                         Float.parseFloat(busPV_pg_wrapper.getEditText().getText().toString()),
                         Float.parseFloat(busPV_v_wrapper.getEditText().getText().toString()));}
@@ -48,7 +48,6 @@ public class BusPVDialog extends DialogFragment {
                dialogInterface.dismiss();
            }
        });
-
         return builder.create();
     }
 }

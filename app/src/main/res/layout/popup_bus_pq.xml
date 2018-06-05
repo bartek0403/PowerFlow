@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="PL"
+            android:hint="Active power [MW]"
             android:inputType="numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
@@ -24,13 +24,14 @@
         android:id="@+id/bus_pq_ql_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/editText_bus_pq_ql"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="QL"
+            android:hint="Reactive power [Mvar]"
             android:inputType="numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
