@@ -11,3 +11,7 @@ się w folderze 'cpp'.
 
 ![alt text](https://github.com/bartek0403/PowerFlow1/blob/master/screen.png?raw=true)
 
+
+Aplikacja implementuje jako moduł WaterDropListView 
+https://android-arsenal.com/details/1/2078
+
